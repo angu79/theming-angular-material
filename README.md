@@ -1,4 +1,4 @@
-# Theming Angular and Material - The missing guide
+# Theming Angular and Material MD3 - The missing guide
 ![thumbnail](./slides/thumbnail.png)
 
 ## Hello
