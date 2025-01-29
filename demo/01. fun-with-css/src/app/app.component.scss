@@ -16,6 +16,8 @@
     border-radius: 16px;
     overflow: hidden;
 
+    --kobi: lime;
+
     main {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
