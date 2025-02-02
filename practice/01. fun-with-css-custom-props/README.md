@@ -1,59 +1,23 @@
-# FunWithCss
+# Try it yourself - Custom CSS Properties and the `var` function
+In this exercise we will repeat what I did in the **fun with css** project and apply the same value to many properties using the `var` function and custom properties
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.0.4.
+Please repeat the following steps: 
 
-## Development server
+## 1. Create a custom property
+- Open `src/styles.scss` and create a `:root` selector.
+- Define a new property, for example `--primary-color` and set its value to any valid color you choose
+- Inspect it using the devtools, and see how it is inherited by all the elements in the DOM
 
-To start a local development server, run:
+## 2. Apply it to the components
+- Locate all the `scss` files in the project:
+  - `src/styles.scss`
+  - `src/app/app.component.scss`
+  - `src/app/components/toolbar/toolbar.component.scss`
+  - `src/app/components/card/card.component.scss`
+  - `src/app/components/sidebar/sidebar.component.scss`
+- Find all the places where the primary colors is used. 
 
-```bash
-ng serve
-```
+>NOTE the primary color may appear in various different color formats: `#1565c1`, `hsl(212, 80%, 42%)`, `rgb(21, 101, 192)`
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+- Replace them with the custom property, using the `var` function
 
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
