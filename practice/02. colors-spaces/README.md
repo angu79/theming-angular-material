@@ -1,59 +1,18 @@
-# ColorSpaces
+# Try it yourself - RGB based palletes
+In this exercise we will repeat what I did in the **color-spaces** project and change theme by defining different palettes using the same css custom properties
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.0.4.
+Please repeat the following steps: 
 
-## Development server
+## 1. Create 2 additional palettes
+- Open `src/styles.scss` 
+- Create 2 new classes: `pal-1` and `pal-2`
+- In each class, give alternative values to the custom properties `--p-10` - `--p-90`
+- You can use the color picker to choose the proper values, or you can copy-paste from my example
 
-To start a local development server, run:
+## 2. Apply it to the card
+- Open the `app.component.html` file
+- give the `<app-pard>` element one of the classes that you have created, and watch how it changes theme
 
-```bash
-ng serve
-```
-
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+## 3. Display the 2 new palettes
+- In the `app.component.html` file dupliacte the `<div class="palette">` element and its content 2 more times
+- Use the class attribute to give each palette a different theme
