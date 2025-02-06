@@ -27,3 +27,7 @@ In this repository you can find all material for the course
 * Practice 3 - Palettes using HSL
   * [GitHub](https://github.com/kobi-hari-udemy/theming-angular-material/tree/main/practice/03.%20color-spaces-hsl)
   * [StackBlitz](https://stackblitz.com/fork/github/kobi-hari-udemy/theming-angular-material/tree/main/practice/03.%20color-spaces-hsl?title=HSL%20Palette&file=README.md)
+
+* Practice 4 - Palettes using OKLCH
+  * [GitHub](https://github.com/kobi-hari-udemy/theming-angular-material/tree/main/practice/04.%20color-spaces-oklch)
+  * [StackBlitz](https://stackblitz.com/fork/github/kobi-hari-udemy/theming-angular-material/tree/main/practice/04.%20color-spaces-oklch?title=OKLCH%20Palette&file=README.md)
