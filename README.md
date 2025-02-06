@@ -20,3 +20,6 @@ In this repository you can find all material for the course
   * [Github](https://github.com/kobi-hari-udemy/theming-angular-material/tree/main/practice/01.%20fun-with-css-custom-props)
   * [StackBlitz](https://stackblitz.com/fork/github/kobi-hari-udemy/theming-angular-material/tree/main/practice/01.%20fun-with-css-custom-props?title=Custom%20CSS%20Properties&file=README.md)
 
+* Practice 02 - Palettes using RGB
+  * [GitHub](https://github.com/kobi-hari-udemy/theming-angular-material/tree/main/practice/02.%20colors-spaces)
+  * [StackBlitz](https://stackblitz.com/fork/github/kobi-hari-udemy/theming-angular-material/tree/main/practice/02.%20colors-spaces?title=RGB%20Palette&file=README.md)
