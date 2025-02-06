@@ -23,3 +23,7 @@ In this repository you can find all material for the course
 * Practice 02 - Palettes using RGB
   * [GitHub](https://github.com/kobi-hari-udemy/theming-angular-material/tree/main/practice/02.%20colors-spaces)
   * [StackBlitz](https://stackblitz.com/fork/github/kobi-hari-udemy/theming-angular-material/tree/main/practice/02.%20colors-spaces?title=RGB%20Palette&file=README.md)
+
+* Practice 3 - Palettes using HSL
+  * [GitHub](https://github.com/kobi-hari-udemy/theming-angular-material/tree/main/practice/03.%20color-spaces-hsl)
+  * [StackBlitz](https://stackblitz.com/fork/github/kobi-hari-udemy/theming-angular-material/tree/main/practice/03.%20color-spaces-hsl?title=HSL%20Palette&file=README.md)
