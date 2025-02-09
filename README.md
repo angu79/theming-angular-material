@@ -14,7 +14,7 @@ In this repository you can find all material for the course
 
 ## Practice Exercises on StackBlitz
 
-### Section 2 - CSS Tricks for Theming
+### Section 2 - CSS Essentials for Building a Theme
 
 * Practice 01 - Custom properties and `var` function
   * [Github](https://github.com/kobi-hari-udemy/theming-angular-material/tree/main/practice/01.%20fun-with-css-custom-props)
@@ -31,3 +31,8 @@ In this repository you can find all material for the course
 * Practice 4 - Palettes using OKLCH
   * [GitHub](https://github.com/kobi-hari-udemy/theming-angular-material/tree/main/practice/04.%20color-spaces-oklch)
   * [StackBlitz](https://stackblitz.com/fork/github/kobi-hari-udemy/theming-angular-material/tree/main/practice/04.%20color-spaces-oklch?title=OKLCH%20Palette&file=README.md)
+
+### Section 3 - Dynamic and Adaptive Themes using CSS
+* Practice 5 - The `color-mix` function
+* Practice 6 - Palettes using relative colors
+* 
