@@ -35,6 +35,6 @@ In this repository you can find all material for the course
 ### Section 3 - Dynamic and Adaptive Themes using CSS
 * Practice 5 - The `color-mix` function
   * [GitHub](https://github.com/kobi-hari-udemy/theming-angular-material/tree/main/practice/05.%20color-spaces-mix-color)
-  * [StackBlitz](https://stackblitz.com/fork/github/kobi-hari-udemy/theming-angular-material/tree/main/practice/05.%20color-spaces-mix-color?title=Dynamic%20Palette%20using%20color-mix&file=README.md)
+  * [StackBlitz](https://stackblitz.com/fork/github/kobi-hari-udemy/theming-angular-material/tree/main/practice/05.%20color-spaces-mix-color?title=Palettes%20using%20color-mix&file=README.md)
 * Practice 6 - Palettes using relative colors
 * 
