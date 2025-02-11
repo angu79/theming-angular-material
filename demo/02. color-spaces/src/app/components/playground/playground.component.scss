@@ -4,7 +4,7 @@
     gap: 10px;
     border: 1px solid lightgray;
     padding: 10px;
-    --color-1: rgb(255, 0, 0);
+    --color-1: red;
     --color-2: blue;
 
     .colors {
@@ -18,7 +18,8 @@
             align-items: center;
             width: 100px;
             height: 100px;
-            border: 1px solid gray;
+            border: 1px solid gray;  
+                        
 
             &.color-1 {
                 background: var(--color-1);
@@ -30,7 +31,6 @@
             &.mix {
                 background: color-mix(in srgb, var(--color-1), var(--color-2) var(--value));
             }
-    
         }
     }
 }
