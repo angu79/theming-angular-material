@@ -4,8 +4,6 @@
     gap: 10px;
     border: 1px solid lightgray;
     padding: 10px;
-    --color-1: red;
-    --color-2: blue;
 
     .colors {
         display: flex;
@@ -21,16 +19,25 @@
             border: 1px solid gray;  
                         
 
-            &.color-1 {
-                background: var(--color-1);
+            &:nth-child(1) {
+                background: var(--color);
             }
-            &.color-2 {
-                background: var(--color-2);
+            &:nth-child(2) {
+                background: hsl(from var(--color) h s 80%)
+            }
+            &:nth-child(3) {
+                background: hsl(from var(--color) h s 20%)
+            }
+            &:nth-child(4) {
+                background: rgb(from var(--color) 255 g b)
+            }
+            &:nth-child(5) {
+                background: rgb(from var(--color) 0 g b)
+            }
+            &:nth-child(6) {
+                background: rgb(from var(--color) r r r)
             }
 
-            &.mix {
-                background: color-mix(in srgb, var(--color-1), var(--color-2) var(--value));
-            }
         }
     }
 }

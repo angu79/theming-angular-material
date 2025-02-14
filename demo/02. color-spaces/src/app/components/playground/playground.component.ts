@@ -8,7 +8,7 @@ import { FormsModule } from '@angular/forms';
   styleUrl: './playground.component.scss'
 })
 export class PlaygroundComponent {  
-  readonly value = signal(50);
+  readonly selectedColor = signal('blue');
 
 
 }
