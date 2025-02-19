@@ -9,7 +9,39 @@ body, html {
     padding: 0;
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    --gry-01: oklch(99% 0 0);
+    --gry-02: oklch(93% 0 0);
+    --gry-03: oklch(82% 0 0);
+    --gry-04: oklch(72% 0 0);
+    --gry-05: oklch(67% 0 0);
+    --gry-06: oklch(50% 0 0);
+    --gry-07: oklch(42% 0 0);
+    --gry-08: oklch(33% 0 0);
+    --gry-09: oklch(20% 0 0);
+    --gry-10: oklch(09% 0 0);
+
+    --clr-01: oklch(from var(--base) 99% 0.02 h);
+    --clr-02: oklch(from var(--base) 93% 0.04 h);
+    --clr-03: oklch(from var(--base) 82% 0.07 h);
+    --clr-04: oklch(from var(--base) 72% 0.10 h);
+    --clr-05: oklch(from var(--base) 67% 0.14 h);
+    --clr-06: oklch(from var(--base) 50% 0.10 h);
+    --clr-07: oklch(from var(--base) 42% 0.08 h);
+    --clr-08: oklch(from var(--base) 33% 0.05 h);
+    --clr-09: oklch(from var(--base) 20% 0.03 h);
+    --clr-10: oklch(from var(--base) 09% 0.01 h);
 }
+
+
+:root {
+  --base: blue;
+}
+
+
+
+
+
 
 
 ::-webkit-scrollbar {
