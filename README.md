@@ -42,3 +42,8 @@ In this repository you can find all material for the course
 * Practice 7 - Supporting light and dark mode
   * [GitHub](https://github.com/kobi-hari-udemy/theming-angular-material/tree/main/practice/07.%20color-spaces-schemes)
   * [StackBlitz](https://stackblitz.com/fork/github/kobi-hari-udemy/theming-angular-material/tree/main/practice/07.%20color-spaces-schemes?title=Light%20and%20Dark%20Modes&file=README.md)
+
+### Section 4 - Exercise Project - Theming an application using CSS
+* Practice 8 - The **Skills** Application
+  * [GitHub](https://github.com/kobi-hari-udemy/theming-angular-material/tree/main/practice/08.%20skills-app-theme)
+  * [StackBlitz](https://stackblitz.com/fork/github/kobi-hari-udemy/theming-angular-material/tree/main/practice/08.%20skills-app-theme?title=Theme%20Skills%20App&file=README.md)
