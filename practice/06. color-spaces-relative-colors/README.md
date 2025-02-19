@@ -1,59 +1,47 @@
-# ColorSpaces
+# Try it yourself - Dynamic palettes using relative colors
+In this exercise we will create 3 dynamic palettes using relative colors. 
+The 3 palettes will be dynamically calculated from one single base color
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.0.4.
+Please follow these steps: 
 
-## Development server
+## 1. Playground - playing with relative colors
+- In the playground component you have a color selected by the user, and 2 divs. One to present the user selected color, and another to present a color calculated relative to it.
+- Try to use different color systems and play with different channels
+- Try to use the `calc` function to derive a value based on the original
+- Try to use `min`, `max` and `clamp` to limit the range of specific channels.
 
-To start a local development server, run:
+## 2. The `--p-base` custom property
+In the main `styles.scss` file, The `--p-base` property will serve as base color for one palette. By setting different values to `--p-base` we dynamically generate a full palette.
+In our application we will dynamically create 3 different values for `--p-base`, each will yield a full palette
 
-```bash
-ng serve
-```
+1. In `:root` create a relative color for `--p-base` by normalizing the `--base-color` to 67% lightness and 31% chrome
+2. In `.pal-1` create an alternative color for `--p-base` by, 
+    - again, normalize `--base-color` to 67% lightness and %31 chroma
+    - set the hue relative to that of `--base-color` but move 100 degrees forward on the hue wheel
+2. In `.pal-2` create an alternative color for `--p-base` by, 
+    - again, normalize `--base-color` to 67% lightness and %31 chroma
+    - set the hue relative to that of `--base-color` but move 100 degrees **backward** on the hue wheel
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
 
-## Code scaffolding
+## 3. The `*` selector
+We will use the `*` selector to recalculate the palette entires `--p-10` - `--p-90` according to `--p-base`. This way, the effective value of `--p-base` will yield a full palette.
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+1. Create the custom properties `--p-10` - `--p-90`.
+2. Give them values relative to `--p-base`
+3. Make sure `--p-50` is exactly the same as `--p-base`
+4. Make `--p-10` - `--p-40` lighter varations of the `--p-base`
+5. Make `--p-60` - `--p-90` darker variations of the `--p-base`
 
-```bash
-ng generate component component-name
-```
+Try different values, and see which palettes you get. If you want, you can use the following values to get the same palettes as in the demo:
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+| property | lightness | chrome |
+| -------- | --------- | ------ |
+| --p-10   | 0.92      | 0.07   |
+| --p-20   | 0.90      | 0.10   |
+| --p-30   | 0.80      | 0.20   |
+| --p-40   | 0.72      | 0.25   |
+| --p-50   | 0.67      | 0.31   |
+| --p-60   | 0.50      | 0.27   |
+| --p-70   | 0.35      | 0.25   |
+| --p-80   | 0.25      | 0.20   |
+| --p-90   | 0.13      | 0.20   |

@@ -14,40 +14,22 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
+  /* create '--p-10' - '--p-90' here */
+
+
 }
 
 :root {
   --base-color: rgb(58, 81, 158);
 
-  --p-10: color-mix(in srgb, var(--base-color), white 85%);
-  --p-20: color-mix(in srgb, var(--base-color), white 62%);
-  --p-30: color-mix(in srgb, var(--base-color), white 41%);
-  --p-40: color-mix(in srgb, var(--base-color), white 20%);
-  --p-50: var(--base-color);
-  --p-60: color-mix(in srgb, var(--base-color), black 15%);
-  --p-70: color-mix(in srgb, var(--base-color), black 30%);
-  --p-80: color-mix(in srgb, var(--base-color), black 45%);
-  --p-90: color-mix(in srgb, var(--base-color), black 55%);
+  /* Create '--p-base' here */
 }
-
-.palette {
-  --p-10: color-mix(in srgb, var(--base-color), white 85%);
-  --p-20: color-mix(in srgb, var(--base-color), white 62%);
-  --p-30: color-mix(in srgb, var(--base-color), white 41%);
-  --p-40: color-mix(in srgb, var(--base-color), white 20%);
-  --p-50: var(--base-color);
-  --p-60: color-mix(in srgb, var(--base-color), black 15%);
-  --p-70: color-mix(in srgb, var(--base-color), black 30%);
-  --p-80: color-mix(in srgb, var(--base-color), black 45%);
-  --p-90: color-mix(in srgb, var(--base-color), black 55%);  
-}
-
-
 
 .pal-1 {
-  --base-color: rgb(76, 175, 80);
+  /* Create alternative '--p-base' here by playing with the hue of the base color */
 }
 
 .pal-2 {
-  --base-color: hsl(291, 64%, 42%);
+  /* Create another alternative '--p-base' here by playing with the hue of the base color */
 }
