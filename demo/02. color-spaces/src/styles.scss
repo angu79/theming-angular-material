@@ -31,6 +31,8 @@ body {
 :root {
   --base-color: rgb(71, 158, 58);
   --p-base: oklch(from var(--base-color) 0.67 0.31 h);
+
+  color-scheme: light dark;
 }
 
 
