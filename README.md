@@ -37,4 +37,6 @@ In this repository you can find all material for the course
   * [GitHub](https://github.com/kobi-hari-udemy/theming-angular-material/tree/main/practice/05.%20color-spaces-mix-color)
   * [StackBlitz](https://stackblitz.com/fork/github/kobi-hari-udemy/theming-angular-material/tree/main/practice/05.%20color-spaces-mix-color?title=Palettes%20using%20color-mix&file=README.md)
 * Practice 6 - Palettes using relative colors
+  * [GitHub](https://github.com/kobi-hari-udemy/theming-angular-material/tree/main/practice/06.%20color-spaces-relative-colors)
+  * [StackBlitz](https://stackblitz.com/fork/github/kobi-hari-udemy/theming-angular-material/tree/main/practice/06.%20color-spaces-relative-colors?title=Palettes%20using%20relative%20colors&file=README.md)
 * 
