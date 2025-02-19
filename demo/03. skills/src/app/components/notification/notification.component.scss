@@ -29,14 +29,19 @@
   }
 
   &.info {
+    --base: blue;
   }
 
   &.warning {
+    --base: yellow;
   }
 
   &.error {
+    --base: red;
   }
 
+
   &.success {
+    --base: green;
   }
 }
