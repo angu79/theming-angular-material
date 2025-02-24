@@ -5,13 +5,14 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "compile": "sass --watch scss:public --no-source-map",
-    "serve": "serve public",
+    "serve": "live-server public --watch=public",
     "start": "concurrently \"npm run compile\" \"npm run serve\""
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "concurrently": "^9.1.2",
+    "live-server": "^1.2.2",
     "sass": "^1.85.0",
     "serve": "^14.2.4"
   }
