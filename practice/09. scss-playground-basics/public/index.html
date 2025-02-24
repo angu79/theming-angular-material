@@ -2,9 +2,27 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Hello World</title>
+    <title>Compiled CSS Output</title>
+    <!-- Link to the compiled CSS -->
+    <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-    <h1>Hello world</h1>
+    <h1>Compiled CSS Example</h1>
+    <div class="example">This is a styled div.</div>
+
+    <h2>Raw CSS Code:</h2>
+    <pre id="css-output">Loading CSS...</pre>
+
+    <script>
+        // Load and display raw CSS content
+        fetch('./styles.css')
+            .then(response => response.text())
+            .then(css => {
+                document.getElementById('css-output').textContent = css;
+            })
+            .catch(error => {
+                document.getElementById('css-output').textContent = 'Error loading CSS: ' + error;
+            });
+    </script>
 </body>
 </html>

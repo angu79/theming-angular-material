@@ -4,11 +4,15 @@
   "description": "",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "sass --watch scss:public --no-source-map" 
+    "compile": "sass --watch scss:public --no-source-map",
+    "serve": "serve public",
+    "start": "concurrently \"npm run compile\" \"npm run serve\""
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "sass": "^1.85.0"
+    "concurrently": "^9.1.2",
+    "sass": "^1.85.0",
+    "serve": "^14.2.4"
   }
 }

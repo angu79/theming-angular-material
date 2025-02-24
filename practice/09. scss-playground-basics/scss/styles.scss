@@ -8,10 +8,9 @@
 $fav: green;
 
 body {
-    background-color: $fav;
 
     h1 {
-        font-weight: bold;
+        background-color: $fav;
     }
 }
 

@@ -1,0 +1,12 @@
+.sec {
+  color: red;
+}
+
+.special {
+  color: red;
+  background-color: lightcoral;
+}
+
+body h1 {
+  background-color: green;
+}
