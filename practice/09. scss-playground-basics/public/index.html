@@ -3,22 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <title>Compiled CSS Output</title>
-    <!-- Link to the compiled CSS -->
-    <link rel="stylesheet" href="./styles.css">
+
+    <!-- Prism.js for syntax highlighting -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" rel="stylesheet" />
 </head>
 <body>
-    <h1>Compiled CSS Example</h1>
-    <div class="example">This is a styled div.</div>
+    <h1>CSS Code:</h1>
+    <pre><code id="css-output" class="language-css">Loading CSS...</code></pre>
 
-    <h2>Raw CSS Code:</h2>
-    <pre id="css-output">Loading CSS...</pre>
+    <!-- Prism.js library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-css.min.js"></script>
 
     <script>
-        // Load and display raw CSS content
+        // Fetch and display the raw CSS with syntax highlighting
         fetch('./styles.css')
             .then(response => response.text())
             .then(css => {
-                document.getElementById('css-output').textContent = css;
+                const codeBlock = document.getElementById('css-output');
+                codeBlock.textContent = css;
+                Prism.highlightElement(codeBlock); // Apply syntax highlighting
             })
             .catch(error => {
                 document.getElementById('css-output').textContent = 'Error loading CSS: ' + error;
