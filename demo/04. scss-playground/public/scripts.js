@@ -28,4 +28,8 @@ function loadCss(elementId) {
 
 }
 
+function reload() {
+    window.document.reload();
+}
+
 
