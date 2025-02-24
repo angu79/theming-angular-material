@@ -16,8 +16,12 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-css.min.js"></script>
 
     <script>
-        // Fetch and display the raw CSS with syntax highlighting
-        fetch('./styles.css')
+        setInterval(loadCss, 3000); // Reload CSS every second
+        loadCss();
+
+        function loadCss() {
+
+            fetch(`./styles.css?cacheBust=${new Date().getTime()}`)
             .then(response => response.text())
             .then(css => {
                 const codeBlock = document.getElementById('css-output');
@@ -27,6 +31,7 @@
             .catch(error => {
                 document.getElementById('css-output').textContent = 'Error loading CSS: ' + error;
             });
+        }
     </script>
 </body>
 </html>

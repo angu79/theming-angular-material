@@ -3,9 +3,8 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "compile": "sass --watch scss:public --no-source-map",
-    "serve": "live-server public --watch=public",
+    "compile": "sass --watch scss:public --no-source-map && touch public/index.html",
+    "serve": "live-server public --no-browser",
     "start": "concurrently \"npm run compile\" \"npm run serve\""
   },
   "author": "",

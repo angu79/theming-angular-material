@@ -1,10 +1,10 @@
 .sec {
-  color: lime;
+  color: magenta;
 }
 
 .special {
-  color: red;
-  background-color: lightcoral;
+  color: blue;
+  background-color: lightblue;
 }
 
 body h1 {
