@@ -50,6 +50,6 @@ In this repository you can find all material for the course
 
 
 ### Section 5 - ScSS Essentials for Theming
-* Practice 9 - Nesting in ScSS
+* Practice 9 - Playground for the entire section
   * [GitHub](https://github.com/kobi-hari-udemy/theming-angular-material/tree/main/practice/09.%20scss-playground)
   * [StackBlitz](https://stackblitz.com/fork/github/kobi-hari-udemy/theming-angular-material/tree/main/practice/09.%20scss-playground?title=ScSS%20Nesting&file=scss/styles.scss)

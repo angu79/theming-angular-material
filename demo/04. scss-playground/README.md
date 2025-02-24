@@ -1,5 +1,5 @@
 # ScSS Playground
-You can user this project to play around with `ScSS` files and see the result `CSS`. 
+You can use this project to play around with `ScSS` files and see the result `CSS`. 
 The project contains a `scss` folder, inside you will file several scss files.
 
 * The file [`styles.scss`](./scss/styles.scss) is the main file, and it is being compiled continuously. You can modify this file or any other file in this folder
