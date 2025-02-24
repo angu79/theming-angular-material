@@ -1,0 +1,17 @@
+@use 'second';
+
+.special {
+    color: red;
+    background-color: lightcoral;
+}
+
+$fav: green;
+
+body {
+    background-color: $fav;
+
+    h1 {
+        font-weight: bold;
+    }
+}
+
