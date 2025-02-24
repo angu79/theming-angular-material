@@ -28,7 +28,7 @@ function loadCss(elementId) {
 
 }
 
-function reload() {
+function reloadPage() {
     window.document.reload();
 }
 
