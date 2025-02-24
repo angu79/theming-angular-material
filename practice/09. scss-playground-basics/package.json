@@ -4,7 +4,7 @@
   "description": "",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "sass --watch scss:out-css --no-source-map" 
+    "start": "sass --watch scss:public --no-source-map" 
   },
   "author": "",
   "license": "ISC",
