@@ -49,4 +49,7 @@ In this repository you can find all material for the course
   * [StackBlitz](https://stackblitz.com/fork/github/kobi-hari-udemy/theming-angular-material/tree/main/practice/08.%20skills-app-theme?title=Theme%20Skills%20App&file=README.md)
 
 
-* [Test]()
+### Section 5 - ScSS Essentials for Theming
+* Practice 9 - Nesting in ScSS
+  * [GitHub](https://github.com/kobi-hari-udemy/theming-angular-material/tree/main/practice/09.%20scss-playground-basics)
+  * [StackBlitz](https://stackblitz.com/fork/github/kobi-hari-udemy/theming-angular-material/tree/main/practice/09.%20scss-playground-basics?title=ScSS%20Nesting&file=README.md)
