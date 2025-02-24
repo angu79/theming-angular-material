@@ -28,8 +28,9 @@ function loadCss(elementId) {
 
 }
 
-function reloadPage() {
-    window.document.reload();
+
+function reloadPage(msg) {  
+    if ((msg?.data === 'reload') || (msg?.data === 'refreshcss')) {
+        location.reload();
+    }
 }
-
-
