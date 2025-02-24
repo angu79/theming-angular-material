@@ -1,16 +1,10 @@
 @use 'second';
 
-.special {
-    color: blue;
-    background-color: lightblue;
+.root {
+    border: 1px solid gray;
+    padding: 5px;
 }
 
-$fav: green;
-
-body {
-
-    h1 {
-        background-color: $fav;
-    }
+h1 {
+    color: salmon;
 }
-
