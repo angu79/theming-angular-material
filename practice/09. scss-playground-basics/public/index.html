@@ -14,13 +14,21 @@
     <!-- Prism.js library -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-css.min.js"></script>
+    <script src="scripts.js"></script>
 
     <script>
-        setInterval(loadCss, 3000); // Reload CSS every second
         loadCss();
 
-        function loadCss() {
+        var address = getWebSocketAddress();
+        var socket = new WebSocket(address);
+        socket.onmessage = () => {
+            loadCss();
+        }
 
+
+
+        function loadCss() {
+            console.log('Refreshing css');
             fetch(`./styles.css?cacheBust=${new Date().getTime()}`)
             .then(response => response.text())
             .then(css => {
