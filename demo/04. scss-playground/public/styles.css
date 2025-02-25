@@ -12,3 +12,9 @@ section.shopping-list ul {
 section.shopping-list ul > li {
   color: red;
 }
+section.shopping-list ul > li:hover {
+  background-color: lightgray;
+}
+:not(section.shopping-list ul > li) {
+  font-size: 1.2em;
+}
