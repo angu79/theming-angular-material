@@ -1,3 +1,22 @@
 h1 {
     color: green;
+    border-bottom: 1px solid lime;
 }
+
+section.shopping-list  {
+
+    h3 {
+        color: blue;
+    }
+
+    ul {
+        border: 1px solid gray;
+
+        > li {
+            color: red;
+        }
+    }
+} // end section.shopping-list
+
+
+
