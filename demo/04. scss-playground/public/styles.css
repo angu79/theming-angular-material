@@ -1,6 +1,18 @@
+:root {
+  --my-color: green;
+}
+
 h1 {
   color: green;
   border-bottom: 1px solid lime;
+}
+
+h2 {
+  color: blue;
+}
+
+h4 {
+  color: green;
 }
 
 section.shopping-list h3 {

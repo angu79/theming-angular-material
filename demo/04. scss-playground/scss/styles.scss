@@ -1,6 +1,22 @@
+$my-color: green;
+
+:root {
+    --my-color: green;
+}
+
 h1 {
-    color: green;
+    color: $my-color;
     border-bottom: 1px solid lime;
+}
+
+
+h2 {
+    $my-color: blue;
+    color: $my-color;
+}
+
+h4 {
+    color: $my-color;
 }
 
 section.shopping-list  {
