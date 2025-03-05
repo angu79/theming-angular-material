@@ -1,46 +1,31 @@
 $my-color: green;
-$prop: padding;
-$entity: ball;
 
-@debug 'my color is ', $my-color;
-
-:root {
-    --my-color: #{$my-color};
+@function max($a, $b) {
+    $res: if($a > $b, $a, $b);
+    @return $res;
 }
+
+@function aspect-ratio-height($aspect-ratio: 1, $width) {
+    @return $width / $aspect-ratio;
+}
+
+.root {
+    $width: 600px;
+    width: $width;
+    height: aspect-ratio-height($width: $width);
+
+}
+
+$num: max(10, 20);
+@debug "$num", $num;
+
+
 
 h1 {
     color: $my-color;
     border-bottom: 1px solid lime;
 }
 
-.test {
-    #{$prop}-top: 2px;
-    #{$prop}-bottom: 4px;
-    #{$prop}-left: 2px;
-    #{$prop}-right: 5px;
-}
-
-.big-#{$entity} {
-    size: 40px;
-}
-.small-#{$entity} {
-    size: 20px;
-}
-.medium-#{$entity} {
-    size: 30px;
-}
-
-
-h2 {
-    $my-color: blue;
-    @debug 'my local color is ', $my-color;
-
-    color: $my-color;
-}
-
-h4 {
-    color: $my-color;
-}
 
 section.shopping-list  {
 
@@ -53,16 +38,6 @@ section.shopping-list  {
 
         > li {
             color: red;
-
-            @debug 'the current parent selector is', &;
-
-            &:hover {
-                background-color: lightgray;
-            }
-
-            :not(&) {
-                font-size: 1.2em;
-            }
         }
     }
 } // end section.shopping-list

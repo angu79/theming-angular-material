@@ -1,37 +1,11 @@
-:root {
-  --my-color: green;
+.root {
+  width: 600px;
+  height: 600px;
 }
 
 h1 {
   color: green;
   border-bottom: 1px solid lime;
-}
-
-.test {
-  padding-top: 2px;
-  padding-bottom: 4px;
-  padding-left: 2px;
-  padding-right: 5px;
-}
-
-.big-ball {
-  size: 40px;
-}
-
-.small-ball {
-  size: 20px;
-}
-
-.medium-ball {
-  size: 30px;
-}
-
-h2 {
-  color: blue;
-}
-
-h4 {
-  color: green;
 }
 
 section.shopping-list h3 {
@@ -42,10 +16,4 @@ section.shopping-list ul {
 }
 section.shopping-list ul > li {
   color: red;
-}
-section.shopping-list ul > li:hover {
-  background-color: lightgray;
-}
-:not(section.shopping-list ul > li) {
-  font-size: 1.2em;
 }
