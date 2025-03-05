@@ -1,14 +1,33 @@
 $my-color: green;
+$prop: padding;
+$entity: ball;
 
 @debug 'my color is ', $my-color;
 
 :root {
-    --my-color: red;
+    --my-color: #{$my-color};
 }
 
 h1 {
     color: $my-color;
     border-bottom: 1px solid lime;
+}
+
+.test {
+    #{$prop}-top: 2px;
+    #{$prop}-bottom: 4px;
+    #{$prop}-left: 2px;
+    #{$prop}-right: 5px;
+}
+
+.big-#{$entity} {
+    size: 40px;
+}
+.small-#{$entity} {
+    size: 20px;
+}
+.medium-#{$entity} {
+    size: 30px;
 }
 
 
