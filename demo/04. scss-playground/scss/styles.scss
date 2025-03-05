@@ -1,7 +1,9 @@
 $my-color: green;
 
+@debug 'my color is ', $my-color;
+
 :root {
-    --my-color: green;
+    --my-color: red;
 }
 
 h1 {
@@ -12,6 +14,8 @@ h1 {
 
 h2 {
     $my-color: blue;
+    @debug 'my local color is ', $my-color;
+
     color: $my-color;
 }
 
@@ -30,6 +34,8 @@ section.shopping-list  {
 
         > li {
             color: red;
+
+            @debug 'the current parent selector is', &;
 
             &:hover {
                 background-color: lightgray;
