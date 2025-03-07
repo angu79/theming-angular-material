@@ -1,4 +1,7 @@
+@use 'sass:color';
+
 $my-color: green;
+$primary-color: color.scale($my-color, $lightness: 50%);
 $theme: light;
 $background: if($theme == dark, black, white);
 
@@ -12,6 +15,8 @@ $background: if($theme == dark, black, white);
 }
 
 div.root {
+    --primary-color: #{$my-color};
+    background-color: color-mix(in srgb, var(--primary-color), white 20%);
     height: calc(20% + 300px);
     width: dobule($number: 200px);
     background-color: $background;
