@@ -1,24 +1,21 @@
 $my-color: green;
+$theme: light;
+$background: if($theme == dark, black, white);
 
-@function max($a, $b) {
-    $res: if($a > $b, $a, $b);
-    @return $res;
+@function dobule($number, $multiplier: 2) {
+    $result: $number * $multiplier;
+    @return $result;
 }
 
-@function aspect-ratio-height($aspect-ratio: 1, $width) {
-    @return $width / $aspect-ratio;
+@function max-value($a, $b) {
+    @return if($a > $b, $a, $b);
 }
 
-.root {
-    $width: 600px;
-    width: $width;
-    height: aspect-ratio-height($width: $width);
-
+div.root {
+    height: calc(20% + 300px);
+    width: dobule($number: 200px);
+    background-color: $background;
 }
-
-$num: max(10, 20);
-@debug "$num", $num;
-
 
 
 h1 {
@@ -38,6 +35,10 @@ section.shopping-list  {
 
         > li {
             color: red;
+
+            &:hover {
+                background-color: lightgray;
+            }
         }
     }
 } // end section.shopping-list

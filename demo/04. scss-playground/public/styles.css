@@ -1,6 +1,7 @@
-.root {
-  width: 600px;
-  height: 600px;
+div.root {
+  height: calc(20% + 300px);
+  width: 400px;
+  background-color: white;
 }
 
 h1 {
@@ -16,4 +17,7 @@ section.shopping-list ul {
 }
 section.shopping-list ul > li {
   color: red;
+}
+section.shopping-list ul > li:hover {
+  background-color: lightgray;
 }
