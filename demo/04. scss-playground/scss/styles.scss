@@ -1,44 +1,34 @@
-@use 'sass:color';
-@use 'sass:list';
-
-@function generate-spacings($unit) {
-    @return (0, $unit, 2 * $unit, 4 * $unit);
-}
-
-$spacings: generate-spacings(4px);
-@debug $spacings;
-
-@each $size in $spacings {
-    .m-#{$size} {
-        margin: $size;
-    }
-    .p-#{$size} {
-        padding: $size;
-    }
-}
-
+@use 'sass:map';
 
 $my-color: green;
-$colors: (red, green, blue, purple, yellow);
-$other-colors: (orange, pink, brown, black, white);
+$font-sizes: ("small": 12px, "medium": 16px, "large": 24px);
+$modified-sizes: map.set($font-sizes, "medium", 18px);
+$more-sizes: ("small": 10px, "x-large": 32px, "xx-large": 48px);
+$all-sizes: map.merge($font-sizes, $more-sizes);
 
-@debug list.index($colors, purple);
-$first-color: list.nth($colors, 1);
-$last-color: list.nth($colors, -1);
-@debug 'first-color', $first-color;
-@debug 'last-color', $last-color;
+$colors: (
+    "primary": blue,
+    "secondary": green,
+    "danger": red
+);
 
-$all-colors: list.join($colors, $other-colors);
-$more-colors: list.append($all-colors, cyan);
-@debug 'more-colors', $more-colors;
-
-
-
-@each $color in $colors {
- #{'.text-' + $color} {
-    color: $color;
+:root {
+    @each $name, $color in $colors {
+        --color-#{$name}: #{$color};
+    }
 }
+
+$medium-size: map.get($font-sizes, "medium");
+
+@debug 'medium size', $medium-size;
+
+@each $name, $size in $all-sizes {
+    .text-#{$name} {
+        font-size: $size;
+    }
 }
+
+@debug 'font sizes', $font-sizes;
 
 div.root {
 }

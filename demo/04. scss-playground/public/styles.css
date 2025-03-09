@@ -1,53 +1,27 @@
-.m-0 {
-  margin: 0;
+:root {
+  --color-primary: blue;
+  --color-secondary: green;
+  --color-danger: red;
 }
 
-.p-0 {
-  padding: 0;
+.text-small {
+  font-size: 10px;
 }
 
-.m-4px {
-  margin: 4px;
+.text-medium {
+  font-size: 16px;
 }
 
-.p-4px {
-  padding: 4px;
+.text-large {
+  font-size: 24px;
 }
 
-.m-8px {
-  margin: 8px;
+.text-x-large {
+  font-size: 32px;
 }
 
-.p-8px {
-  padding: 8px;
-}
-
-.m-16px {
-  margin: 16px;
-}
-
-.p-16px {
-  padding: 16px;
-}
-
-.text-red {
-  color: red;
-}
-
-.text-green {
-  color: green;
-}
-
-.text-blue {
-  color: blue;
-}
-
-.text-purple {
-  color: purple;
-}
-
-.text-yellow {
-  color: yellow;
+.text-xx-large {
+  font-size: 48px;
 }
 
 h1 {
