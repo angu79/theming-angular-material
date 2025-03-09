@@ -2,33 +2,29 @@
 
 $my-color: green;
 
-@mixin button-style($color) {
-    background-color: $color;
-    color: white;
-    padding: 10px;
-    border-radius: 5px;
+// @if
+// @for
+
+@mixin button-variants($theme: 'light') {
+    @if $theme == 'light' {
+        background-color: white;
+        color: black;
+    } @else {
+        background-color: black;
+        color: white;
+    } 
 }
 
-@mixin all-buttons() {
-    $colors: (
-        primary: blue,
-        secondary: green,
-        error: red
-    );
-
-    @each $name, $color in $colors {
-        .button-#{$name} {
-            @include button-style($color);
+@mixin heading-sizes($base-size) {
+    @for $i from 1 through 6 {
+        h#{$i} {
+            font-size: $base-size + (6 - $i) * 10;
+            font-weight: bold;
         }
     }
-
 }
 
-.my-class {
-    @include all-buttons();
-}
-
-
+@include heading-sizes(10px);
 
 
 div.root {
