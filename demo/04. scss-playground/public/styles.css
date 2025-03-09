@@ -1,27 +1,20 @@
-:root {
-  --color-primary: blue;
-  --color-secondary: green;
-  --color-danger: red;
+.my-class .button-primary {
+  background-color: blue;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
 }
-
-.text-small {
-  font-size: 10px;
+.my-class .button-secondary {
+  background-color: green;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
 }
-
-.text-medium {
-  font-size: 16px;
-}
-
-.text-large {
-  font-size: 24px;
-}
-
-.text-x-large {
-  font-size: 32px;
-}
-
-.text-xx-large {
-  font-size: 48px;
+.my-class .button-error {
+  background-color: red;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
 }
 
 h1 {
