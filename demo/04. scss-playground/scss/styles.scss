@@ -1,25 +1,46 @@
 @use 'sass:color';
+@use 'sass:list';
 
-$my-color: green;
-$primary-color: color.scale($my-color, $lightness: 50%);
-$theme: light;
-$background: if($theme == dark, black, white);
-
-@function dobule($number, $multiplier: 2) {
-    $result: $number * $multiplier;
-    @return $result;
+@function generate-spacings($unit) {
+    @return (0, $unit, 2 * $unit, 4 * $unit);
 }
 
-@function max-value($a, $b) {
-    @return if($a > $b, $a, $b);
+$spacings: generate-spacings(4px);
+@debug $spacings;
+
+@each $size in $spacings {
+    .m-#{$size} {
+        margin: $size;
+    }
+    .p-#{$size} {
+        padding: $size;
+    }
+}
+
+
+$my-color: green;
+$colors: (red, green, blue, purple, yellow);
+$other-colors: (orange, pink, brown, black, white);
+
+@debug list.index($colors, purple);
+$first-color: list.nth($colors, 1);
+$last-color: list.nth($colors, -1);
+@debug 'first-color', $first-color;
+@debug 'last-color', $last-color;
+
+$all-colors: list.join($colors, $other-colors);
+$more-colors: list.append($all-colors, cyan);
+@debug 'more-colors', $more-colors;
+
+
+
+@each $color in $colors {
+ #{'.text-' + $color} {
+    color: $color;
+}
 }
 
 div.root {
-    --primary-color: #{$my-color};
-    background-color: color-mix(in srgb, var(--primary-color), white 20%);
-    height: calc(20% + 300px);
-    width: dobule($number: 200px);
-    background-color: $background;
 }
 
 
