@@ -12,4 +12,20 @@ This is what we will do:
 7. Connect the theme selection UI to the service
 8. Refactor some custom controls so that they comply with the current theme and are also directly customizable using **web tokens**
 
+## Project structure
+
+### The `components` folder
+Contains components that can be used inside our pages
+- `author-card` presents information about a specific author
+- `fav-button` presents a heart shaped button that is either on or off
+- `post-card` presents info about a specific blog post in a card
+- `tag-list` presents a list of topic "chips" or "tags"
+
+### The `pages` folder
+Contains components that are full pages that you can navigate to using the router:
+- `home` - The home page presenting the logo, and a list of post cards
+- `post-detail` - The content of a specific blog post
+- `author-details` - Information about an author along with a list of blog post by this author
+- `topic` - A list of blog posts about this topic
+
 
