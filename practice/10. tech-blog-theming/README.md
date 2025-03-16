@@ -1,5 +1,15 @@
-Resources:
-1. [Relative colors](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_colors/Relative_colors)
-2. [Creating oklch Palettes](https://developer.chrome.com/blog/css-relative-color-syntax)
-3. [oklch explained](https://www.learnwithjason.dev/blog/oklch-better-color-css-browser/)
-4. [Why to move to oklch](https://evilmartians.com/chronicles/oklch-in-css-why-quit-rgb-hsl)
+# Code along with me
+You can use this code as a starting point for this section, and code along with me
+
+## Agenda
+This is what we will do:
+1. Refactor the CSS properties so that they use relative colors and rely on the 3 theme parameters
+2. Set up SCSS and configure it
+3. Write SCSS mixins that will automate the color system creation
+4. Write SCSS mixin that "switches theme" by reseting the 3 theme parameters
+5. Create an Angular service that will hold the state of the application theme
+6. Make the angular service apply the current theme on the DOM
+7. Connect the theme selection UI to the service
+8. Refactor some custom controls so that they comply with the current theme and are also directly customizable using **web tokens**
+
+

@@ -53,3 +53,8 @@ In this repository you can find all material for the course
 * Practice 9 - Playground for the entire section
   * [GitHub](https://github.com/kobi-hari-udemy/theming-angular-material/tree/main/practice/09.%20scss-playground)
   * [StackBlitz](https://stackblitz.com/fork/github/kobi-hari-udemy/theming-angular-material/tree/main/practice/09.%20scss-playground?title=ScSS%20Playground&file=scss/styles.scss)
+
+### Section 6 - Theming Angular Applications
+* Practice 10 - This section's project
+  * [GitHub](https://github.com/kobi-hari-udemy/theming-angular-material/tree/main/practice/10.%20tech-blog-theming)
+  * [StackBlitz](https://stackblitz.com/fork/github/kobi-hari-udemy/theming-angular-material/tree/main/practice/10.%20tech-blog-theming?title=Themeable%20Applications&file=README.md)
