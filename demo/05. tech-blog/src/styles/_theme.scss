@@ -1,4 +1,5 @@
 @use 'sass:map';
+@use 'sass:list';
 
 @mixin create($primary: blue, $accent: pink, $scheme: light dark) {
     --theme-primary: #{$primary};
@@ -20,44 +21,27 @@
         }
 }
 
+@mixin _palette-entries($prefix, $entry-base, $levels) {
+    $keys: map.keys($levels);
+    $length: list.length($keys);
 
+    @for $i from 1 through $length {
+        $light-key: list.nth($keys, $i);
+        $dark-key: list.nth($keys, -$i);
+
+        $light-color: var(--color-#{$entry-base}-#{$light-key});
+        $dark-color: var(--color-#{$entry-base}-#{$dark-key});
+        --#{$prefix}-#{$light-key}: light-dark(#{$light-color}, #{$dark-color});
+    }
+}
 
 @mixin color-system($gray-levels, $primary-levels, $accent-levels) {
     * {
         @include _gray-entries($gray-levels);
-        @include _relative-color-entries('primarry', var(--theme-primary), $primary-levels);
+        @include _relative-color-entries('primary', var(--theme-primary), $primary-levels);
         @include _relative-color-entries('accent', var(--theme-accent), $accent-levels);
-            
-        --n-0: light-dark(var(--color-gray-0), var(--color-gray-100));
-        --n-10: light-dark(var(--color-gray-10), var(--color-gray-90));
-        --n-20: light-dark(var(--color-gray-20), var(--color-gray-80));
-        --n-30: light-dark(var(--color-gray-30), var(--color-gray-70));  
-        --n-40: light-dark(var(--color-gray-40), var(--color-gray-60));
-        --n-50: light-dark(var(--color-gray-50), var(--color-gray-50));
-        --n-60: light-dark(var(--color-gray-60), var(--color-gray-40));
-        --n-70: light-dark(var(--color-gray-70), var(--color-gray-30));
-        --n-80: light-dark(var(--color-gray-80), var(--color-gray-20));
-        --n-90: light-dark(var(--color-gray-90), var(--color-gray-10));
-        --n-100: light-dark(var(--color-gray-100), var(--color-gray-0));
-      
-        --p-10: light-dark(var(--color-primary-10), var(--color-primary-90));
-        --p-20: light-dark(var(--color-primary-20), var(--color-primary-80));
-        --p-30: light-dark(var(--color-primary-30), var(--color-primary-70));
-        --p-40: light-dark(var(--color-primary-40), var(--color-primary-60));
-        --p-50: light-dark(var(--color-primary-50), var(--color-primary-50));
-        --p-60: light-dark(var(--color-primary-60), var(--color-primary-40));
-        --p-70: light-dark(var(--color-primary-70), var(--color-primary-30));
-        --p-80: light-dark(var(--color-primary-80), var(--color-primary-20));
-        --p-90: light-dark(var(--color-primary-90), var(--color-primary-10));
-      
-        --a-10: light-dark(var(--color-accent-10), var(--color-accent-90));
-        --a-20: light-dark(var(--color-accent-20), var(--color-accent-80));
-        --a-30: light-dark(var(--color-accent-30), var(--color-accent-70));
-        --a-40: light-dark(var(--color-accent-40), var(--color-accent-60));
-        --a-50: light-dark(var(--color-accent-50), var(--color-accent-50));
-        --a-60: light-dark(var(--color-accent-60), var(--color-accent-40));
-        --a-70: light-dark(var(--color-accent-70), var(--color-accent-30));
-        --a-80: light-dark(var(--color-accent-80), var(--color-accent-20));
-        --a-90: light-dark(var(--color-accent-90), var(--color-accent-10));
+        @include _palette-entries('n', 'gray', $gray-levels);
+        @include _palette-entries('p', 'primary', $primary-levels);
+        @include _palette-entries('a', 'accent', $accent-levels);
     }
 }

@@ -1,17 +1,32 @@
 @use 'common-buttons' as btn;
 @use 'syntax-highlight' as stx;
 @use 'theme';
+@use 'levels';
 
 @include btn.go;
 @include stx.go;
-@include theme.color-system;
+@include theme.color-system(levels.$gray-levels, levels.$primary-levels, levels.$accent-levels);
 
+
+.theme-2 {
+  @include theme.create(
+    $primary: purple, 
+    $accent: orange, 
+    $scheme: dark);
+}
+
+.theme-3 {
+  @include theme.create(
+    $primary: green, 
+    $accent: brown, 
+    $scheme: light);
+}
 
 :root {
 
   @include theme.create(
-    $primary: oklch(0.75 0.162 0), 
-    $accent: oklch(0.80 0.25 100), 
+    $primary: blue, 
+    $accent: pink, 
     $scheme: light);
 
 
