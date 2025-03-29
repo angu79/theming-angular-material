@@ -58,3 +58,8 @@ In this repository you can find all material for the course
 * Practice 10 - This section's project
   * [GitHub](https://github.com/kobi-hari-udemy/theming-angular-material/tree/main/practice/10.%20tech-blog-theming)
   * [StackBlitz](https://stackblitz.com/fork/github/kobi-hari-udemy/theming-angular-material/tree/main/practice/10.%20tech-blog-theming?title=Themeable%20Applications&file=README.md)
+
+### Section 7 - Introduction to Angular Material Theming
+* Practice 11 - Getting started with Angular Material
+  * [GitHub](https://github.com/kobi-hari-udemy/theming-angular-material/tree/main/practice/11.%20material-theming-baseline)
+  * [StackBlitz](https://stackblitz.com/fork/github/kobi-hari-udemy/theming-angular-material/tree/main/practice/11.%20material-theming-baseline?title=Getting%20Started&file=README.md)
