@@ -17,10 +17,7 @@ body {
 
 :root {
   @include mat.theme((
-    color: (
-      primary: mat.$violet-palette, 
-      tertiary: mat.$blue-palette,
-    ),
+    color: mat.$magenta-palette,
     typography: Roboto,
     density: 0,
   ));

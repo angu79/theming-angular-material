@@ -1,59 +1,25 @@
-# MaterialTheming
+# Try it yourself - Basic Theming in Angular Material MD3
+In this exercise we will practice the basics of theming angular material MD3. This very simple application defines a theme and then uses the material buttons and icons along with some basic html elements.
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.5.
+> In this example, please use the angular material documentation to see the available system tokens and palettes
+* [System variables](https://material.angular.io/guide/system-variables)
+* [Prebuilt palettes](https://material.angular.io/guide/theming#prebuilt-color-palettes)
 
-## Development server
+Then follow these steps: 
 
-To start a local development server, run:
+## 1. Use system tokens in app component
+In the `app.component.scss` use the system design tokens to style the content of the component
+- Set the color of the `<h1>` element to the tretiary color.
+- Set the color of the `<h2>` element to the secondary color.
+- Set the background of the `.actions` div to `Primary Container`
+- Set the border of the same div to `On Primary Container`
 
-```bash
-ng serve
-```
+In the main `styles.scss` file
+- Set the background of the application to the `Surface Container` color
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
 
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+## 2. Configure the theme
+In the `styles.scss` change the configuration of the theme
+- Set the primary palette to `Spring Green`
+- Set the tertiary palette to `Yellow`
+- Set the density to -2 and see how it affects the flat button
