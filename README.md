@@ -61,3 +61,5 @@ In this repository you can find all material for the course
 
 ### Section 7 - Introduction to Angular Material Theming
 * Practice 11 - Getting started with Angular Material
+  * [GitHub](https://github.com/kobi-hari-udemy/theming-angular-material/tree/main/practice/11.%20material-theming-setup)
+  * [StackBlitz](https://stackblitz.com/fork/github/kobi-hari-udemy/theming-angular-material/tree/main/practice/11.%20material-theming-setup?title=Besic%20Theming&file=README.md)
