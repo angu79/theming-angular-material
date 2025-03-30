@@ -18,20 +18,11 @@ body {
 :root {
   @include mat.theme((
     color: (
-      primary: mat.$violet-palette, 
-      tertiary: mat.$blue-palette,
-    ),
-    typography: Roboto,
-    density: 0,
-  ));
-}
-
-.red-theme {
-  @include mat.theme((
-    color: (
       primary: mat.$rose-palette, 
-      tertiary: mat.$cyan-palette,
-    ),
+      tertiary: mat.$orange-palette,
+    ), 
+    typography: Roboto, 
+    density: -3
   ));
 
 }
