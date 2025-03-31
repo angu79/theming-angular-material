@@ -23,6 +23,10 @@ body {
     typography: Roboto, 
     density: 0
   ));
+
+  --sys-density-padding: var(--mat-form-field-container-vertical-padding, 16px);
+
+
 }
 
 .theme-1 {
