@@ -66,3 +66,6 @@ In this repository you can find all material for the course
 * Practice 12 - Scoped Themes
   * [GitHub](https://github.com/kobi-hari-udemy/theming-angular-material/tree/main/practice/12.%20material-theming-scoped-themes)
   * [StackBlitz](https://stackblitz.com/fork/github/kobi-hari-udemy/theming-angular-material/tree/main/practice/12.%20material-theming-scoped-themes?title=Scoped%20Themes&file=README.md)
+* Practice 13 - Shadows and Density
+  * [GitHub](https://github.com/kobi-hari-udemy/theming-angular-material/tree/main/practice/13.%20material-theming-density-shadows)
+  * [StackBlitz](https://stackblitz.com/fork/github/kobi-hari-udemy/theming-angular-material/tree/main/practice/13.%20material-theming-density-shadows?title=Shadows%20and%20Density&file=README.md)
