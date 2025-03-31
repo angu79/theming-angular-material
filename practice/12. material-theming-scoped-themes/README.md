@@ -1,59 +1,20 @@
-# MaterialTheming
+# Try it yourself - Scoped Themes
+In this exercise we will practice the "Scoped Themes" pattern where we employ multiple themes at the same application using the cascading nature od CSS.
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.5.
+> In this example, please use the angular material documentation to see the available system tokens and palettes
+* [System variables](https://material.angular.io/guide/system-variables)
+* [Prebuilt palettes](https://material.angular.io/guide/theming#prebuilt-color-palettes)
 
-## Development server
+Then follow these steps: 
 
-To start a local development server, run:
+## 1. Create 2 more themes
+In the main `styles.scss` file
+- Create 2 global class selectors (for example: `.theme-1` and `.theme-2`)
+- In each of them use the `mat.theme` mixin to apply a different palette, choose 2 palettes from the angular material documentation
 
-```bash
-ng serve
-```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+## 2. Apply them in `app.component.html`
+- apply one theme directly on the second card
+- apply the other theme on the div that surrounds 3 more cards
 
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+>Notice how the effect of the scoped themes cascades into the card components and affects both our own custom elements and the angular material ones.
