@@ -2,6 +2,7 @@
 // Custom Theming for Angular Material
 // For more information: https://material.angular.io/guide/theming
 @use '@angular/material' as mat;
+@use 'hari-theme-colors' as hari-theme;
 @import './app/styles/kobi-theme.css';
 
 html, body { height: 100%; }
@@ -30,5 +31,17 @@ body {
 
 }
 
+.theme-1 {
+  color: #21864c;
+  color: #d91845;
+  color: #db8f1e;
+}
+
 .theme-2 {
+  @include mat.theme((
+    color: (
+      primary: hari-theme.$primary-palette,
+      tertiary:hari-theme.$tertiary-palette,
+    )
+  ))
 }
