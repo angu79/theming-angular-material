@@ -1,59 +1,28 @@
-# MaterialTheming
+# Try it yourself - Shadows and Density
+In this exercise we will practice adding shadows and density to our components
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.5.
+> In this example, please use the angular material documentation to see the available system tokens and palettes
+* [System variables](https://material.angular.io/guide/system-variables)
+* [Prebuilt palettes](https://material.angular.io/guide/theming#prebuilt-color-palettes)
 
-## Development server
+Then follow these steps: 
 
-To start a local development server, run:
+## 1. Add shadow to the card component
+In the main `card.component.scss` file
+- Add a `box-shadow` property to the `:host` selector, to apply the shadow on the entire card
+- Use one of the elevation tokens to set the shadow
+- Add a `&:hover` selector inside the `:host` to support hover state
+- Set a different elevation value to the `box-shadow` property on hover
 
-```bash
-ng serve
-```
+## 2. Apply density on the card component
+In the `styles.scss` file, create a system token for padding that depends on density
+- At the `:root` selector add a css custom property, for example `--sys-density-padding`
+- The value should be copied from one of the density related tokens of Angular Material. For example, you can use `--mat-form-field-container-vertical-padding`
+- Make sure to also give it a fallback value, using the second parameter of the `var` function
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+In the `card.component.scss` file, apply the density
+- Find the padding property of the `:host` selector and use the system token you have created
 
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+## 3. Try different densities
+In the `styles.scss` file
+- Locate the default theme, and change the density parameter to values between 0 and -5
