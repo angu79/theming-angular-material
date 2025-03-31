@@ -63,3 +63,6 @@ In this repository you can find all material for the course
 * Practice 11 - Getting started with Angular Material
   * [GitHub](https://github.com/kobi-hari-udemy/theming-angular-material/tree/main/practice/11.%20material-theming-setup)
   * [StackBlitz](https://stackblitz.com/fork/github/kobi-hari-udemy/theming-angular-material/tree/main/practice/11.%20material-theming-setup?title=Besic%20Theming&file=README.md)
+* Practice 12 - Scoped Themes
+  * [GitHub](https://github.com/kobi-hari-udemy/theming-angular-material/tree/main/practice/12.%20material-theming-scoped-themes)
+  * [StackBlitz](https://stackblitz.com/fork/github/kobi-hari-udemy/theming-angular-material/tree/main/practice/12.%20material-theming-scoped-themes?title=Scoped%20Themes&file=README.md)
