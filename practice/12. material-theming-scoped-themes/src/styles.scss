@@ -19,7 +19,10 @@ body {
 
 :root {
   @include mat.theme((
-    color: mat.$azure-palette, 
+    color: (
+      primary: mat.$azure-palette, 
+      tertiary: mat.$orange-palette,
+    ), 
     typography: Roboto, 
     density: 0
   ));
