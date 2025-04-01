@@ -74,3 +74,6 @@ In this repository you can find all material for the course
 * Practice 14 - Theme Overrides
   * [GitHub](https://github.com/kobi-hari-udemy/theming-angular-material/tree/main/practice/14.%20material-customization-theme-overrides)
   * [StackBlitz](https://stackblitz.com/fork/github/kobi-hari-udemy/theming-angular-material/tree/main/practice/14.%20material-customization-theme-overrides?title=Theme%20Overrides&file=README.md)
+* Practice 15 - Component Overrides
+  * [GitHub](https://github.com/kobi-hari-udemy/theming-angular-material/tree/main/practice/15.%20material-customization-component-overrides)
+  * [StackBlitz](https://stackblitz.com/fork/github/kobi-hari-udemy/theming-angular-material/tree/main/practice/15.%20material-customization-component-overrides?title=Component%20Overrides&file=README.md)
