@@ -18,11 +18,11 @@
     }
 
     .btw {
-    // --mat-sys-primary-container: pink;
-    @include mat.theme-overrides((
-        primary-container: salmon, 
-        on-primary-container: oklch(from salmon 20% c h),        
-    ));
+        // --mat-sys-primary-container: pink;
+        @include mat.theme-overrides((
+            primary-container: salmon, 
+            on-primary-container: oklch(from salmon 20% c h),        
+        ));
 
 
         background: var(--mat-sys-primary-container);
