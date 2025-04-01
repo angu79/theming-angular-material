@@ -14,7 +14,7 @@ In the `app.component.scss` file
 - Use the correct mixin to define toolbar overrides (see the documentation for that)
 - Set the background to **Primary Container**
 - Set the foreground to **Primary**
-- **Challange**: Set the font of the toolbar to `--mat-sys-label-large`
->HINT: you can set the entire font (size, family, weight, line height) in one property using one token
+- **Challange**: Set the colors of the **icons** in the toolbar as well
+
 
 
