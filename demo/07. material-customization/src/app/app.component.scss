@@ -1,6 +1,15 @@
+@use '@angular/material' as mat;
+
 :host {
     display: flex;
     flex-direction: column;
+
+    // --mat-sys-primary-container: pink;
+    @include mat.theme-overrides((
+        primary-container: salmon, 
+        on-primary-container: oklch(from salmon 20% c h),
+    ));
+
 
 
     mat-toolbar {

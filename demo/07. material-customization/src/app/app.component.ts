@@ -8,9 +8,15 @@ import { ALL_ACTIVITIES } from './data/all-activities';
 
 @Component({
   selector: 'app-root',
-  imports: [MatToolbarModule, MatButtonModule, MatIconModule, MatCardModule, MatBadgeModule],
+  imports: [
+    MatToolbarModule,
+    MatButtonModule,
+    MatIconModule,
+    MatCardModule,
+    MatBadgeModule,
+  ],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  styleUrl: './app.component.scss',
 })
 export class AppComponent {
   readonly activities = ALL_ACTIVITIES;
