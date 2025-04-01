@@ -12,7 +12,10 @@
   </button>
 </mat-toolbar>
 
-<h1>These are the available skills</h1>
+<h1>
+  These are the available skills
+  <button mat-flat-button>Click me</button>
+</h1>
 <div class="btw">
   You can add skills to your profile and search for activities that match your skills.
 </div>
@@ -33,7 +36,7 @@
         </p>
       </mat-card-content>
       <mat-card-actions>
-        <button mat-button>LIKE</button>
+        <button color="accent" mat-button>LIKE</button>
         <button mat-button>SHARE</button>
         <button mat-button [matBadge]="activity.members">EXPLORE</button>
       </mat-card-actions>
