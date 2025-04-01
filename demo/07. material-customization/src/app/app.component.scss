@@ -42,6 +42,13 @@
         padding: 2rem;
         gap: 2rem;
 
+        color: var(--mat-sys-secondary);
+
+        @include mat.card-overrides((
+            subtitle-text-color: var(--mat-sys-tertiary),
+            elevated-container-color: var(--mat-sys-primary-fixed)
+        ));
+
 
         mat-card {
             width: 300px;
@@ -60,6 +67,7 @@
 
             p {
                 margin: 1rem 0;
+                color: var(--mat-sys-on-primary-fixed);
             }
         }
     }
