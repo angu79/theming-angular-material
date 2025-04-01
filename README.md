@@ -69,3 +69,8 @@ In this repository you can find all material for the course
 * Practice 13 - Shadows and Density
   * [GitHub](https://github.com/kobi-hari-udemy/theming-angular-material/tree/main/practice/13.%20material-theming-density-shadows)
   * [StackBlitz](https://stackblitz.com/fork/github/kobi-hari-udemy/theming-angular-material/tree/main/practice/13.%20material-theming-density-shadows?title=Shadows%20and%20Density&file=README.md)
+
+### Section 8 - Advanced Customization in Angular Material
+* Practice 14 - Theme Overrides
+  * [GitHub](https://github.com/kobi-hari-udemy/theming-angular-material/tree/main/practice/14.%20material-customization-theme-overrides)
+  * [StackBlitz](https://stackblitz.com/fork/github/kobi-hari-udemy/theming-angular-material/tree/main/practice/14.%20material-customization-theme-overrides?title=Theme%20Overrides&file=README.md)

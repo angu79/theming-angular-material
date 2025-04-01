@@ -7,10 +7,13 @@ In this exercise we will practice modifying specific system tokens using the `th
 
 Then follow these steps: 
 
-## Override the theme inside app.component.scss
+## Override theme tokens
 In the `app.component.scss` file
 - Add `@use` to include the material theming partial.
 - Inside the `:host` selector, add a call to the `mat.theme-overrides` mixin
 - set the primary container color to pink
 - set the "on-primary-container" token to a darker version of pink
+
+## Override the entire theme
+- Instead of the theme overrides, set the entire theme to rose, but only inside the app component
 
