@@ -31,7 +31,12 @@ p {
       primary: mat.$azure-palette,
       tertiary: mat.$rose-palette,
     ),
-    typography: Roboto,
+    typography: (
+      plain-family: Roboto,
+      brand-family: Segoe UI,
+      regular-weight: 100,
+      medium-weight: 700,
+    ),
     density: 0,
   ));
 }
