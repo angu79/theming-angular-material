@@ -83,4 +83,5 @@ In this repository you can find all material for the course
 
 ### Section 9 - Typography and Iconography in Angular Material MD3
 * Practice 17 - Basic Typography
-  * [Github]()
+  * [Github](https://github.com/kobi-hari-udemy/theming-angular-material/tree/main/practice/17.%20material-customization-typography)
+  * [StackBlitz](https://stackblitz.com/fork/github/kobi-hari-udemy/theming-angular-material/tree/main/practice/17.%20material-customization-typography?title=Basic%20Typography&file=README.md)
