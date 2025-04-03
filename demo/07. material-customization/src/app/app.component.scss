@@ -28,6 +28,15 @@
     color: var(--mat-sys-primary);
     font: var(--mat-sys-headline-large);
     margin: 0 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    mat-icon {
+      font-size: inherit;
+      width: auto;
+      height: auto;
+    }
   }
 
   .btw {
