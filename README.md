@@ -88,3 +88,6 @@ In this repository you can find all material for the course
 * Practice 18 - Icons and Font Sets
   * [GitHub](https://github.com/kobi-hari-udemy/theming-angular-material/tree/main/practice/18.%20material-customization-icons)
   * [StackBlitz](https://stackblitz.com/fork/github/kobi-hari-udemy/theming-angular-material/tree/main/practice/18.%20material-customization-icons?title=Icons%20and%20Font%20Sets&file=README.md)
+* Practice 19 - Symbols
+  * [GitHub](https://github.com/kobi-hari-udemy/theming-angular-material/tree/main/practice/19.%20material-customization-symbols)
+  * [StackBlitz](https://stackblitz.com/fork/github/kobi-hari-udemy/theming-angular-material/tree/main/practice/19.%20material-customization-symbols?title=Symbols%20and%20Font%20Variations&file=README.md)
