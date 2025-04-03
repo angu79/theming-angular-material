@@ -85,3 +85,6 @@ In this repository you can find all material for the course
 * Practice 17 - Basic Typography
   * [Github](https://github.com/kobi-hari-udemy/theming-angular-material/tree/main/practice/17.%20material-customization-typography)
   * [StackBlitz](https://stackblitz.com/fork/github/kobi-hari-udemy/theming-angular-material/tree/main/practice/17.%20material-customization-typography?title=Basic%20Typography&file=README.md)
+* Practice 18 - Icons and Font Sets
+  * [GitHub](https://github.com/kobi-hari-udemy/theming-angular-material/tree/main/practice/18.%20material-customization-icons)
+  * [StackBlitz](https://stackblitz.com/fork/github/kobi-hari-udemy/theming-angular-material/tree/main/practice/18.%20material-customization-icons?title=Icons%20and%20Font%20Sets&file=README.md)
