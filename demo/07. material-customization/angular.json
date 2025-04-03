@@ -17,11 +17,6 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "stylePreprocessorOptions": {
-              "includePaths": [
-                "src/styles"
-              ]
-            },
             "outputPath": "dist/material-customization",
             "index": "src/index.html",
             "browser": "src/main.ts",
@@ -37,7 +32,9 @@
               }
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss", 
+              "node_modules/roboto-fontface/css/roboto/roboto-fontface.css", 
+              "node_modules/material-icons/iconfont/material-icons.css"
             ],
             "scripts": []
           },
