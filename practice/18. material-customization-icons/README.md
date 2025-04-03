@@ -1,4 +1,4 @@
-# Try it yourself - Typography
+# Try it yourself - Material Icons
 In this exercise we will practice The Icons system of **Angular Material**
 
 > In this example, please use the angular material documentation 
