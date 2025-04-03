@@ -5,6 +5,7 @@
   flex-direction: column;
 
   mat-toolbar {
+    font: var(--mat-sys-label-large);
     .example-spacer {
       flex: 1 1 auto;
     }
@@ -25,15 +26,19 @@
 
   h1 {
     color: var(--mat-sys-primary);
-    font: var(--mat-sys-headline-medium);
+    font: var(--mat-sys-headline-large);
     margin: 0 1rem;
-
-    @include mat.button-overrides((
-      filled-container-shape: 0px 20px 20px 0px
-    ))
   }
 
   .btw {
+    background: var(--mat-sys-primary-container);
+    font: var(--mat-sys-body-medium);
+    border: 1px solid var(--mat-sys-on-primary-container);
+    color: var(--mat-sys-on-primary-container);
+    margin: 0.5rem;
+    padding: 0 0.5rem;
+
+
     // --mat-sys-primary-container: pink;
     @include mat.theme-overrides(
       (
@@ -41,13 +46,6 @@
         on-primary-container: oklch(from salmon 20% c h),
       )
     );
-
-    background: var(--mat-sys-primary-container);
-    font: var(--mat-sys-body-medium);
-    border: 1px solid var(--mat-sys-on-primary-container);
-    color: var(--mat-sys-on-primary-container);
-    margin: 0.5rem;
-    padding: 0 0.5rem;
   }
 
   .cards {
