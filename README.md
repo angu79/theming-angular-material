@@ -11,6 +11,9 @@ In this repository you can find all material for the course
 * [Modern Angular with Signals - The missing guide](https://www.udemy.com/course/modern-angular-with-signals-the-missing-guide/?referralCode=D6E6DCE04E9A41ADC517)
 * [NgRx Signal Store - The missing guide](https://www.udemy.com/course/ngrx-signal-store-the-missing-guide/?referralCode=05384AF83051655A1C59)
 
+## Extra meterial
+* [Checklist for angular material apps](./materia-todo.md)
+
 
 ## Practice Exercises on StackBlitz
 
@@ -94,3 +97,9 @@ In this repository you can find all material for the course
 * Practice 20 - SVG Icons
   * [GitHub](https://github.com/kobi-hari-udemy/theming-angular-material/tree/main/practice/20.%20material-customization-svg-icons)
   * [StackBlitz](https://stackblitz.com/fork/github/kobi-hari-udemy/theming-angular-material/tree/main/practice/20.%20material-customization-svg-icons?title=Custom%20SVG%20Icons&file=README.md)
+
+
+
+
+
+
