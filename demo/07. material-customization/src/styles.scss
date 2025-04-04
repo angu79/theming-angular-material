@@ -64,3 +64,8 @@ p {
     color: mat.$green-palette
   ))
 }
+
+
+mat-icon[svgIcon] {
+  --color-1: var(--mat-sys-primary);
+}
