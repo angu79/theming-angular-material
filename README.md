@@ -91,3 +91,6 @@ In this repository you can find all material for the course
 * Practice 19 - Symbols
   * [GitHub](https://github.com/kobi-hari-udemy/theming-angular-material/tree/main/practice/19.%20material-customization-symbols)
   * [StackBlitz](https://stackblitz.com/fork/github/kobi-hari-udemy/theming-angular-material/tree/main/practice/19.%20material-customization-symbols?title=Symbols%20and%20Font%20Variations&file=README.md)
+* Practice 20 - SVG Icons
+  * [GitHub](https://github.com/kobi-hari-udemy/theming-angular-material/tree/main/practice/20.%20material-customization-svg-icons)
+  * [StackBlitz](https://stackblitz.com/fork/github/kobi-hari-udemy/theming-angular-material/tree/main/practice/20.%20material-customization-svg-icons?title=Custom%20SVG%20Icons&file=README.md)
