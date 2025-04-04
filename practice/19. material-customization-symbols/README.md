@@ -1,5 +1,5 @@
 # Try it yourself - Material Symbols
-In this exercise we will practice The Icons system of **Angular Material**
+In this exercise we will practice The Symbols of **Angular Material**
 
 > In this example, please use the angular material documentation 
 * [System variables](https://material.angular.io/guide/system-variables)
