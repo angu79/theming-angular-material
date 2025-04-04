@@ -10,8 +10,12 @@ export class InitService {
   readonly domSanitizer = inject(DomSanitizer);
 
   registerIcons() {
+    this.iconRegistey.registerFontClassAlias('symbol', 'material-symbols-outlined');
+    this.iconRegistey.registerFontClassAlias('icon', 'material-icons');
+    this.iconRegistey.setDefaultFontSetClass('material-symbols-outlined');
+
     this.iconRegistey.addSvgIcon('trophy', this.domSanitizer.bypassSecurityTrustResourceUrl('svg/cup-star.svg'));
-    this.iconRegistey.addSvgIcon('half=heart', this.domSanitizer.bypassSecurityTrustResourceUrl('svg/heart-halfs.svg'));
+    this.iconRegistey.addSvgIcon('hearts', this.domSanitizer.bypassSecurityTrustResourceUrl('svg/heart-halfs.svg'));
   }
 
 }
